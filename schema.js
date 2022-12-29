@@ -3,9 +3,8 @@ const mongoose=require('mongoose')
 const Schema = mongoose.Schema
 
 const data = new Schema({
-    id:Number,
-    class:{type:Array},
-    studentsCount:{type:Number,default:100}
+    classs:String,
+    studentsCount:{type:Number}
 });
-const modl=mongoose.model('User',data)
+const modl=mongoose.model('Cluser',data)
 module.exports=modl

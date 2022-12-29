@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-const userModel = require('../schema')
+const userModel = require('./schema')
 
 const mongoose = require('mongoose')
 
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json())
 
 
-app.use('/',require('../rout'))
+app.use('/',require('./rout'))
 
 app.listen(3000,async()=>{
     await db()
